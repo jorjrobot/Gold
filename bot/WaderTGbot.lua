@@ -227,7 +227,7 @@ function create_config( )
     "broadcast",
     "invite",
     "all",
-    "me",
+    "infull",
     "leave_ban",
 	"supergroup",
 	"whitelist",
@@ -237,7 +237,6 @@ function create_config( )
 	"bot-lock",
 	"clash_of_clan",
 	"cleaner",
-	"infull",
 	"instagram",
 	"linkpv",
 	"lock-forward",
@@ -249,7 +248,7 @@ function create_config( )
 	"voice",
 	"wai"
     },
-    sudo_users = {67559249,71951412,154868817,143531868,0,tonumber(our_id)},--Sudo users
+    sudo_users = {194849320,tonumber(our_id)},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[WaderTG v4
 An advanced administration bot based on TG-CLI written in Lua
@@ -348,7 +347,7 @@ This command will send text to [group_id]
 
 *Only admins and sudo can use res, setowner, commands
 
-channel:@WaderTGTeam
+🔱 @TeleGold_Team 🔱
 ]],
     help_text = [[
 Commands list :
@@ -481,185 +480,58 @@ will return group ban list
 channel:@WaderTGTeam
 ]],
 	help_text_super =[[
-WaderTG SuperGroup Commands :
-=========================
-#info
-About the SuperGroup info
-=========================
-#infull
-About the you infull
-=========================
-#admins
-SuperGroup admins list
-=========================
-#setadmin
-Set SuperGroup admins
-=========================
-#owner
-Show owner of SuperGroup
-=========================
-#setowner
-Set the SuperGroup owner
-=========================
-#modlist
-Show moderators list
-=========================
-#bots
-List bots in SuperGroup
-=========================
-#bot[lock,unlock]
-Bot[lock,unlock] the SuperGroup
-=========================
-#who
-List all users in SuperGroup
-=========================
-#block
-kick a user from SuperGroup
-+Added user to blocked list+
-=========================
-#ban
-Ban user from the SuperGroup
-+Only with[id+user]+
-=========================
-#unban
-Unban user from the SuperGroup
-+Only with[id+user]+
-=========================
-#id
-SuperGroup ID or user ID
-+For user ID:#id @username or reply by: #id+
-=========================
-#id from
-Get ID of user massage is forwarded from
-=========================
-#kickme
-Kick you from SuperGroup
-=========================
-#promote[@username+id]
-Promote a SuperGroup moderator
-=========================
-#demote[@username+id]
-Demote a SuperGroup moderator
-=========================
-#setname [group name]
-Set the chat name
-=========================
-#setphoto
-Set the chat photo
-+Then photo and send the+
-=========================
-#setrules[rules]
-Set the chat rules
-=========================
-#setabout
-Set the chat about
-=========================
-#save [value] <text>
-Set extra info for chat
-=========================
-#get[value]
-Retrieves extra info for chat by value
-=========================
-#newlink
-Create group link
-=========================
-#link
-Group the link
-=========================
-#linkpv
-Send SuperGroup link private
-=========================
-#rules
-Chat the rules
-=========================
-#lock[links+flood+spam+arabic+member+rtl+sticker+contacts+strict+tgservice+forward]
-Lock SuperGroup settings
-=========================
-#unlock[links+flood+spam+arabic+member+rtl+sticker+contacts+strict+tgservice+forward]
-Unlock SuperGroup settings
-=========================
-#mute[all+audio+gifs+photo+video+text+service]
-Mute SuperGroup massage types
-=========================
-#unmute[all+audio+gifs+photo+video+text+service]
-Unmute SuperGroup massage types
-=========================
-#setflood[value]
-Set[value] as flood sensitivity
-=========================
-#settins
-SuperGroup settings
-=========================
-#muteslist
-SuperGroup mutes
-=========================
-#muteuser[@username+id]
-Mute a user in SuperGroup
-+#muteuser[@username+id]remove mutelist+
-=========================
-#mutelist
-SuperGroup muted user list
-=========================
-#banlist
-SuperGroup ban list
-=========================
-#clean[rules+about+modlist+mutelist]
-Cleaned
-=========================
-#del
-Deletes a massage by reply
-=========================
-#public[yes+no]
-Set SuperGroup visibility in pm #chats or #chatlist commands
-=========================
-#res[@username]
-Returns user name and id by @username
-=========================
-#log
-Returns SuperGroup logs
-=========================
-#addword[text]
-Added the badword
-+If the desired word is cleared+
-=========================
-#badwords
-SuperGroup badword list
-=========================
-#rw[text]
-clear[text]from list badword
-=========================
-#clearbadwords
-Cleaned badword list
-=========================
-#clantag[tag]
-Specifications clan a door clsh of clan
-=========================
-#music[truk name]
-Find songs to
-=========================
-#me
-Returns your specifications
-=========================
-#tophoto
-Become stickers to photos
-=========================
-#tosticker
-Turn photos into stikers
-=========================
-#conv[text]
-Text to photos
-=========================
-#sticker[text]
-Text-to-stickers
-=========================
-#wai
-To show office user
-=========================
-#voice[text]
-Text-to-voice
-=========================
-*Only from markes "!" , "/" , "#" use*
-Channel:@WaderTGTeam
+لیست دستورات:
+------
+برای دریافت لینک گروه #link رو ارسال کنید.
+برای تعویض لینک #newlink رو ارسال کنید.
+برای ثبت لینک #setlink رو ارسال کنید.
+برای اخراج #kick جکو با یک فاصله آیدی فرد
+برای نمایش آیدی فرد ریلی #id
+برای نمایش آیدی گروه #id را ارسال کنید.
+برای مسدود کردن کسی از ریپلی #ban استفاده کنید.
+برای رفع مسدود ریپلی #unban 
+برای نمایش لیست مسدود ها #banlist
+برای بلاک کردن شخصی ریپلی #block 
+برای دریافت لیست تنظیمات گروه #settings رو وارد کنید.
+برای ارسال لینک در پی وی #linkpv را استفاده کنید.
+برای مقام دادن به شخصی ریپلی #promote  
+برای حذف مدیریت آیدی فرد را جلوی #demote بزارید.
+برای تویض نام جلوی #setname نام جدید را بنویسید.
+برای تعویض عکس #setphoto را ارسال کنید.
+برای فیلتر کردن کلمه ای بعد از #addword کلمه را بنویسید.
+برای حذف فیلتر جلوی #rw کلمه را بنویسید.
+برای دریافت لیست کلمات فیلتر #badwords را ارسال کنید.
+برای حذف همه فیلتر ها #clearbadwords را ارسال کنید.
+پاک کردن یک پیام ریپلی #del
+برای شخصی کردن گروه yes را جلوی #public بزارید.
+برای عمومی کردن no را جلوی #public بزارید.
+برای پاک کردن این موارد rules-aboud-modlist-mutelist یکی را جلوی #clean بزارید و ارسال کنید.
+برای بیصدا کردن کسی ریپلی #muteuser 
+برای با صدا کردن ریپلی #muteuser
+ برای نمایش لیست بیصداها ریپلی #mutelist
+برای بیصدا کردن این موارد links-flood-spam-arabic-member-rt-sticker-contects-strict-tgservice-forward کافیه یکی ارگز این موارد را جلوی #lock قرار دهید و برای فعال کردن یکی از موارد را جلوی #unlock بزارید.
+برای بیصدا کردن این موارد all-audio-gifs-photo-video-text-service یکی از موارد را جلوی #mute بزارید و برای غیر فعال سازی یکی از موارد بالا را جلوی #unmute گذاشته و ارسال کنید.
+برای حسایت اسپم از 5تا 20 یک عدد را جلوی #setflood بگذارید.
+برای تنظیم قوانین، قوانین رو جلوی #setrules بزارید.
+برای نمایش قوانین #rules را ارسال کنید
+برای تنظیم توضیحات گروه متن خود را جلوی #setabout بگذارید.
+برای خروج از گروه #kickme را ارسال کنید.
+برای لیست مدیران گروه #modlist را ارسال کنید.
+برای گرفتن اطلاعات کسی آیدی را جلوی #res بزارید.
+برای نمایش لیست گروه #who را ارسال کنید.
+برای نمایش لیست ربات های گروه #bots را ارسال کنید.
+برای نمایش ادمین ها #admins را ارسال کنید.
+برای نصب ادمین بعد از #setadmin آیدی فرد را بگذارید.
+برای مشخصات خودتان میتوانید از #info , #me استفاده کنید.
+-------
+برای تغییر متن خوش آمد گویی متن جدید را جلوی #setwlc بگذارید.
+برای بازگو کردن اسم فرد هنگام ورود از {نام اول} برای فامیل از {نام دوم} برای نمایش تاریخ فارسی {تاریخ فارسی}  برای نمایش تاریخ انگلیسی {تاریخ انگلیسی} برای ساعت فارسی {ساعت فارسی} و انگلیسی {ساعت انگلیسی} و برای نمایش نام کاربری از {نام کاربری} میتوان استفاده کرد.
+برای حذف متن خوش آمد از #delwlc استفاده کنید.
+------
+همچنین میتونید بجای # از / و ! نیز استفاده کنید.
+برای ارسال جک در گروه عبارت "جک بگو" و برای نمایش زمان "زمان"را ارسال کنید.
+------
+لیست سرویس های ربات دستور #help2
 ]],
   }
   serialize_to_file(config, './data/config.lua')
