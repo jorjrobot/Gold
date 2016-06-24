@@ -194,7 +194,7 @@ local function run(msg, matches)
 	 text = text..'🔱› نام گروه : '..msg.to.title..'\n'
      text = text..'🔱› کد گروه : '..msg.to.id
     end
-	text = text..'\nِ'
+	text = text..'\n🔱 @TeleGold_Team 🔱\n‌'
     return send_msg(receiver, text, ok_cb, true)
     end
   end
