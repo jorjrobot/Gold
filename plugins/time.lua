@@ -1,21 +1,14 @@
---[[
-#
-#    Time And Date
-#
-#    @WaderTGTeam
-# @WaderTGTeam
-#
-#
-]]
-
 function run(msg, matches)
 local url , res = http.request('http://api.gpmod.ir/time/')
-if res ~= 200 then return "No connection" end
+if res ~= 200 then return "🔱 ارتباط وصل نشد. 🔱" end
 local jdat = json:decode(url)
-local text = '>>Time: '..jdat.FAtime..' \n>>Today: '..jdat.FAdate..'\n------------------\n>> '..jdat.ENtime..'\n>> '..jdat.ENdate.. '\n------------------\n@WaderTGTeam'
+local text = '🔱 ساعت '..jdat.FAtime..' \n🔱 امروز '..jdat.FAdate..' میباشد.\n    ----\n🔱 '..jdat.ENtime..'\n🔱 '..jdat.ENdate.. '\n🔱 @TeleGold_Team 🔱'
 return text
 end
 return {
-  patterns = {"^[#/!]([Tt][iI][Mm][Ee])$"}, 
+  patterns = {
+  "^زمان$",
+  "^[#!/][tT]ime$",
+  }, 
 run = run 
 }
