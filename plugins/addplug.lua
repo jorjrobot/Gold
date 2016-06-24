@@ -11,7 +11,7 @@ local function run(msg, matches)
   file:write(text)
   file:flush()
   file:close()
-  return "Done ;-)" 
+  return "🔱این پلاگین به لیست امکانات ربات اضافی شد.🔱" 
 end
 end 
 return {
